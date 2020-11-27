@@ -1,0 +1,89 @@
+{
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue"
+  ],
+  "beautify.language": {
+    "html": [
+      "htm",
+      "html",
+      "js",
+      "vue"
+    ],
+    "js": {
+      "type": [
+        "javascript",
+        "json"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautify"
+      ]
+    },
+    "css": [
+      "css",
+      "scss",
+      "less"
+    ]
+  },
+  "window.zoomLevel": 1,
+  "beautify.config": {
+    "brace_style": "none,preserve-inline",
+    "keep_array_indentation": true,
+    "indent_size": 2,
+    "indent_char": " ",
+    "indent_with_tabs": false,
+    "wrap_attributes": "force-expand-multiline",
+    "unformatted": [
+      ""
+    ],
+    "html": {
+      "end_with_newline": true,
+      "js": {
+        "indent_size": 2
+      },
+      "css": {
+        "indent_size": 2
+      }
+    },
+    "css": {
+      "indent_size": 2
+    },
+    "js": {
+      "preserve-newlines": true,
+      "indent_size": 2
+    },
+    "end_with_newline": true,
+    "e4x": true,
+    "space_after_anon_function": true
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "git.enableSmartCommit": true,
+  "editor.wordWrap": "on",
+  "vetur.format.defaultFormatter.js": "none",
+  "javascript.format.enable": false,
+  "vetur.validation.template": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.minimap.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.insertSpaces": false,
+  "editor.useTabStops": false,
+  "explorer.confirmDelete": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[vue]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.rendererType": "dom"
+}
