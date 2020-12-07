@@ -1,5 +1,5 @@
 <template>
-  <div class="outer-dispatch">
+  <div class="page-route-outer">
     <router-view></router-view>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 
 </script>
 <style lang='scss'>
-.outer-dispatch {
+.page-route-outer {
   height: 100%;
   width: 100%;
   position: relative;
