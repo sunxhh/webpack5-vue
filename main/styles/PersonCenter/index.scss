@@ -1,0 +1,172 @@
+.person-center-box {
+	width:3rem;
+	height: 2.3rem;
+	position: relative;
+	background: transparent;
+	z-index: 999;
+	.myself {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 2.3rem;
+		height: 2.3rem;
+		text-align: left;
+		line-height: 2.3rem;
+		box-sizing: border-box;
+		padding-right: 0rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 2rem;
+			height: 2rem;
+			margin-bottom: 2px;
+			vertical-align: middle;
+			margin-right: 0.5rem;
+			cursor: pointer;
+			display: block;
+		}
+		.check {
+			width: 1rem;
+			height: 1rem;
+			margin-right: 1.05rem;
+		}
+	}
+	.personal-center {
+		position: absolute;
+		right:0;
+		z-index: 10;
+		top: 3.5rem;
+		width: 15rem;
+		height: 10rem;
+		box-sizing: border-box;
+		padding: 0 0.8rem;
+		font-size: 14px;
+		color: #ffffff;
+		background:$--nav-personal-center-bg;
+		opacity: 0.86;
+		border-radius: 4px;
+		text-align: left;
+
+		p {
+			width: 100%;
+			height: 1rem;
+			line-height: 1rem;
+			margin: 7px 0;
+
+			span {
+				margin-right: 1rem;
+			}
+		}
+		.personal-title {
+			position: relative;
+			width: 100%;
+			height: 2.5rem;
+			border-bottom: 1px solid $--nav-personal-border;
+			margin-bottom: 1rem;
+			display: flex;
+			align-items: center;
+			font-size: 0.8rem;
+
+			.icons {
+				position: absolute;
+				right: 0;
+				margin: 0;
+
+				i {
+					margin-left: 0.5rem;
+					color:$menu-icon-default;
+					&:hover{
+						color:$menu-icon-hover;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.triangle {
+			position: absolute;
+			top: 0;
+			right: 1.6rem;
+			border-left: 0.4rem solid transparent;
+			border-right: 0.4rem solid transparent;
+			border-bottom: 0.5rem solid rgba($color: #005bac, $alpha: 0.7);
+		}
+	}
+	.download-center {
+		position: absolute;
+		right: 0rem;
+		top: 3.5rem;
+		width: 15rem;
+		height: 15.5rem;
+		box-sizing: border-box;
+		padding: 0 0.8rem;
+		font-size: 14px;
+		color: #ffffff;
+		background-color: $--color-primary;
+		opacity: 0.86;
+		border-radius: 4px;
+		overflow: hidden;
+		text-align: left;
+
+		h3 {
+			position: relative;
+			font-weight: 500;
+			height: 1.5rem;
+			margin: 1rem 0;
+			line-height: 1.5rem;
+			font-size: 0.8rem;
+
+			i {
+				position: absolute;
+				right: 0;
+			}
+		}
+		section {
+			width: 100%;
+			height: 11rem;
+			box-sizing: border-box;
+			overflow: auto;
+
+			.item {
+				position: relative;
+				width: 95%;
+				height: 3.4rem;
+				padding: 0.2rem 0;
+				box-sizing: border-box;
+				border-top: 1px solid #387FBF;
+				margin-left: 1%;
+				color: #ffffff;
+
+				&:nth-of-type(1) {
+					border-bottom: 1px solid #387FBF;
+				}
+				p {
+					position: relative;
+					height: 1rem;
+					line-height: 1rem;
+					font-size: 0.7rem;
+					margin: 0.15rem 0;
+					padding: 0;
+					color: #ffffff;
+
+					span {
+						position: absolute;
+						right: 0;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+	.business-homepage {
+		.kc-modal__body {
+			height: 22rem;
+			span {
+				display: block;
+				padding: 1rem;
+				font-size: 16px;
+			}
+		}
+	}
+}

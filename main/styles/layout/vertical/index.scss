@@ -1,0 +1,19 @@
+@import './mixin.scss';
+@import './transition.scss';
+@import './sidebar.scss';
+@import './layout-vertical-navbar.scss';
+.kc-menu--popup {
+	//background: #000;
+	li{
+		color:#fff;
+	}
+}
+.kc-menu-item:focus, .kc-menu-item:hover {
+	color: #fff;
+	background-color: $color-main-menu-hover;
+}
+.kc-menu--popup .kc-menu-item.is-active {
+	color: #fff!important;
+	background-color: $color-main-menu-hover;
+	border-bottom: none;
+}

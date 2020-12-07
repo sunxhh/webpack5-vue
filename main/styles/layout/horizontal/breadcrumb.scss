@@ -1,0 +1,24 @@
+.main-breadcrumb{
+	width: 100%;
+	display:flex;
+	align-items:center;
+	height:2.6rem;
+	background-color: $--breadcrumbs-bg;
+	position: relative;
+	.kc-breadcrumb{
+		font-size:0.7rem;
+		font-weight:400;
+		min-width:16.2rem;
+		>span{
+			span.kc-breadcrumb__inner{
+				color:$--color-text;
+			}
+			&:first-child{
+				>span{
+					font-weight:600;
+				}
+			}
+
+		}
+	}
+}

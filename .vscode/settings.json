@@ -31,36 +31,7 @@
     ]
   },
   "window.zoomLevel": 1,
-  "beautify.config": {
-    "brace_style": "none,preserve-inline",
-    "keep_array_indentation": true,
-    "indent_size": 2,
-    "indent_char": " ",
-    "indent_with_tabs": false,
-    "wrap_attributes": "force-expand-multiline",
-    "unformatted": [
-      ""
-    ],
-    "html": {
-      "end_with_newline": true,
-      "js": {
-        "indent_size": 2
-      },
-      "css": {
-        "indent_size": 2
-      }
-    },
-    "css": {
-      "indent_size": 2
-    },
-    "js": {
-      "preserve-newlines": true,
-      "indent_size": 2
-    },
-    "end_with_newline": true,
-    "e4x": true,
-    "space_after_anon_function": true
-  },
+  "beautify.config": {},
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "git.enableSmartCommit": true,
   "editor.wordWrap": "on",
@@ -85,5 +56,6 @@
     "editor.defaultFormatter": "HookyQR.beautify"
   },
   "workbench.iconTheme": "vscode-icons",
-  "terminal.integrated.rendererType": "dom"
+  "terminal.integrated.rendererType": "dom",
+  "git.ignoreLimitWarning": true
 }

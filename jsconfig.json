@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "main/*": [
+        "main/*"
+      ],
+      "submodule/*": [
+        "submodule/*"
+      ],
+      "utils/*": [
+        "utils/*"
+      ],
+      "static/*": [
+        "static/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "static",
+    "test",
+    "dist"
+  ]
+}

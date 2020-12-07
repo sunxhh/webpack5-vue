@@ -1,0 +1,16 @@
+.scroll-container {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  height: 1.5rem;
+  width: 100%;
+  /deep/ {
+    .kc-scrollbar__bar {
+      bottom: 0px;
+    }
+    .kc-scrollbar__wrap {
+		margin-bottom: 0!important;
+        height: 1.5rem;
+    }
+  }
+}

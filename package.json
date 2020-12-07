@@ -1,17 +1,28 @@
 {
-  "name": "webpack-vue",
+  "name": "tz-commander-ui",
+  "contentPath": "/vacs",
+  "layout": "H",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "start": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
-  },
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {},
   "devDependencies": {
-    "ora": "~5.1.0",
-    "webpack": "~5.8.0"
+    "babel-eslint": "~10.1.0",
+    "eslint": "~7.15.0",
+    "eslint-config-standard": "~16.0.2",
+    "eslint-loader": "~4.0.2",
+    "eslint-plugin-import": "~2.22.1",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-promise": "~4.2.1",
+    "eslint-plugin-standard": "~5.0.0",
+    "eslint-plugin-vue": "~7.2.0",
+    "vue-eslint-parser": "~7.2.0",
+    "webpack": "~5.10.0"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@szgitlab.kedacom.com:tz-commander/tz-commander-ui.git"
   },
   "author": "sunxh",
   "license": "ISC"
