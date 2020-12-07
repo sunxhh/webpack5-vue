@@ -10,13 +10,10 @@ module.exports = {
     rules: [
       {
         test: /\.(js)$/,
-        loader: 'eslint-loader',
+        exclude: /node_modules/,
         enforce: 'pre',
         include: [],
-        options: {
-          formatter: require('eslint-friendly-formatter'),
-          emitWarning: true
-        }
+        loader: ['eslint-loader']
       }
     ]
   },
