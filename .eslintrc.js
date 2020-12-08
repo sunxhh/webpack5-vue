@@ -30,6 +30,7 @@ module.exports = {
     ],
     'space-before-function-paren': 0,
     'prefer-const': 0,
-    eqeqeq: 0
+    eqeqeq: 0,
+    'vue/comment-directive': 0
   }
 };
