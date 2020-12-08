@@ -9,10 +9,13 @@
         "submodule/*"
       ],
       "utils/*": [
-        "utils/*"
+        "kiafBaseuiUtil/*"
       ],
       "static/*": [
         "static/*"
+      ],
+      "config/*": [
+        "config/*"
       ]
     }
   },

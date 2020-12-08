@@ -11,7 +11,8 @@ module.exports = {
   },
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    node: true
   },
   globals: {
 
@@ -31,6 +32,8 @@ module.exports = {
     'space-before-function-paren': 0,
     'prefer-const': 0,
     eqeqeq: 0,
-    'vue/comment-directive': 0
+    'vue/comment-directive': 0,
+    'dot-notation': 0,
+    'prefer-promise-reject-errors': 0
   }
 };

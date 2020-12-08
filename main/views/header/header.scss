@@ -1,0 +1,84 @@
+.tz-commander-commander-header-outer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .left-wraper {
+    width: 380px;
+    height: 100%;
+    margin-right: 15px;
+    @include flexFixation;
+  }
+
+  .center-wraper {
+    width: 100px;
+    height: 100%;
+    @include flexFlexible;
+  }
+
+  .right-wraper {
+    width: 230px;
+    height: 100%;
+    margin-right: 30px;
+    @include flexFixation;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+  }
+}
+
+.tz-commander-person-center-outer {
+  position: relative;
+
+  .user-info-btn {
+    img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+  }
+
+  .personal-center-outer {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 270px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .personal-center-header-outer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 70px;
+      background: linear-gradient(343deg, #145cf3, #09adff);
+      padding: 0 20px;
+      position: relative;
+      font-size: 18px;
+
+      img {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    }
+
+    .personal-center-content-outer {
+      padding: 20px;
+      background-color: #0d357d;
+
+      .icon-wrapper {
+        display: grid;
+        grid-row-gap: 20px;
+
+        .icon-item {
+          height: 84px;
+        }
+      }
+    }
+  }
+}
+
+.tz-commander-reset-password-outer {}

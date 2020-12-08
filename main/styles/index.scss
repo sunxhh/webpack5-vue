@@ -1,1 +1,6 @@
 @charset "UTF-8";
+@import "./base.scss";
+@import "./mixins/mixins.scss";
+@import "../views/login/styleViews/loginStyle1.scss";
+@import "../views/mainPage/mainPage.scss";
+@import "../views/header/header.scss";

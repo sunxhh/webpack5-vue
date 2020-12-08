@@ -1,0 +1,13 @@
+{
+  "BASE_URL": "https://192.168.7.156:9448/avcs2",
+  "SECRET_KEY": "kedacom",
+  "POPUP": "Y",
+  "CLOUD_RBAC_URL": "https://192.168.7.156:9448/avcs2",
+  "WINDOWS": [
+    {
+      "windowId": "commander",
+      "primary": true,
+      "url": "/#/commander/index"
+    }
+  ]
+}

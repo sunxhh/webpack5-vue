@@ -1,0 +1,19 @@
+.tz-commander-main-page-outer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    height: 64px;
+    width: 100%;
+    @include flexFixation;
+  }
+
+  .bottom {
+    height: 100px;
+    width: 100%;
+    @include flexFlexible;
+  }
+}
