@@ -6,7 +6,7 @@ module.exports = merge({
   devServer: {
     // 告诉服务器从哪里提供内容。只有在你想要提供静态文件时才需要。devServer.publicPath 将用于确定应该从哪里提供 bundle，并且此选项优先。
     // 默认情况下，将使用当前工作目录作为提供内容的目录，但是你可以修改为其他目录
-    contentBase: [resolve('dist'), resolve('static'), resolve('')],
+    contentBase: [resolve('')],
     // 一切服务都启用gzip 压缩
     compress: false,
     // 此路径下的打包文件可在浏览器中访问。

@@ -1,21 +1,22 @@
 const { merge } = require('webpack-merge');
 const { resolve } = require('./helper');
-
 const portfinder = require('portfinder');
 const devConfig = require('./config/dev.env');
 const baseWebpackConfig = require('./webpack.base.conf');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const notifier = require('node-notifier');
 const packageJson = require('../package.json');
+const webpack = require('webpack');
 
 process.env.NODE_ENV = devConfig.NODE_ENV;
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   cache: {
-    type: 'filesystem'
+    type: 'filesystem',
+    cacheDirectory: resolve('.test_cache')
   },
   output: {
-    path: resolve('../dist'),
+    path: resolve('dist'),
     filename: '[name][hash].js',
     publicPath: '/'
   },
@@ -24,7 +25,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ...devConfig.devServer
   },
   mode: 'development',
-  plugins: []
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.CONTEXT_PATH': JSON.stringify(process.env.CONTEXT_PATH),
+      'process.argv': JSON.stringify(process.argv)
+    })
+  ]
 });
 
 module.exports = new Promise((resolve, reject) => {

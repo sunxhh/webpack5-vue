@@ -1,9 +1,8 @@
 const { resolve, getAssetsPath } = require('./helper');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+
 module.exports = {
-  context: resolve('./'),
   entry: {
     main: [resolve('./main/main.js')]
   },
@@ -105,11 +104,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      'process.env.CONTEXT_PATH': JSON.stringify(process.env.CONTEXT_PATH),
-      'process.argv': JSON.stringify(process.argv)
-    }),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       chunks: ['main'],
