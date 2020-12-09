@@ -11,6 +11,9 @@ const packageJson = require('../package.json');
 process.env.NODE_ENV = devConfig.NODE_ENV;
 
 const devWebpackConfig = merge(baseWebpackConfig, {
+  cache: {
+    type: 'filesystem'
+  },
   output: {
     path: resolve('../dist'),
     filename: '[name][hash].js',
