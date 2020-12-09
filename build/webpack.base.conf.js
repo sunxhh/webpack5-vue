@@ -16,8 +16,7 @@ module.exports = {
       vue$: 'vue/dist/vue.esm.js',
       submodule: resolve('submodule'),
       config: resolve('config'),
-      static: resolve('static'),
-      utils: resolve('kiafBaseuiUtil')
+      static: resolve('static')
     }
   },
   module: {

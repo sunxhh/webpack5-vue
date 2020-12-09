@@ -1,12 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import baseRouter from './baseRouter';
-import mainPage from '../views/mainPage/mainPage';
-import HomeRoute from 'submodule/home/router/index';
 
 const routers = [
-  ...baseRouter,
-  ...HomeRoute(mainPage)
+  ...baseRouter
 ];
 
 Vue.use(VueRouter);
