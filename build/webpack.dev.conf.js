@@ -13,7 +13,8 @@ process.env.NODE_ENV = devConfig.NODE_ENV;
 const devWebpackConfig = merge(baseWebpackConfig, {
   cache: {
     type: 'filesystem',
-    cacheDirectory: resolve('.test_cache')
+    // cacheDirectory 默认路径是 node_modules/.cache/webpack
+    cacheDirectory: resolve('.temp_cache')
   },
   output: {
     path: resolve('dist'),
